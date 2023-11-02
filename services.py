@@ -258,10 +258,15 @@ def administrar_chatbot(text,number, messageId, name):
         list.append(replyButtonData)
     
     
+    elif "Bienestar" in text:
+        body = "Grupo ASD tiene para ti diversos beneficios y convenios para que goces de un clima laboral agradable, en pro de tu bienestar:"
+        footer = "Gurú ASD ®"
+        options = ["🧘‍♂️ Días de Bienestar","🏆 Feria de Emprendimiento","🏛️ Convenio Bancolombia"," 🧗‍♂️ Gimnasios","🕊 Plan exequial","🎓 Academia de idiomas", "🤖 Caja de compensación"]
+
+        replyButtonData = buttonReply_Message(number, options, body, footer, "sed11",messageId)
+        list.append(replyButtonData)
     
-    
-    
-    
+       
     
     
     
