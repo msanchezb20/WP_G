@@ -221,9 +221,9 @@ def administrar_chatbot(text,number, messageId, name):
     time.sleep(2)
 
     if "hola" in text:
-        body = "¡Hola! 👋 Bienvenido a Bigdateros. ¿Cómo podemos ayudarte hoy?"
-        footer = "Equipo Bigdateros"
-        options = ["✅ servicios", "📅 agendar cita"]
+        body = "¡Hola! 👋 Bienvenido a GURÚ ASD 🤟, soy tu asistente para aclarar las dudas de la relación laboral e informarte los canales de comunicación de la Compañía"
+        footer = "Gurú ASD ®"
+        options = ["🌅 Vacaciones ", "💰 Cesantias"]
 
         replyButtonData = buttonReply_Message(number, options, body, footer, "sed1",messageId)
         replyReaction = replyReaction_Message(number, messageId, "🫡")
@@ -231,7 +231,7 @@ def administrar_chatbot(text,number, messageId, name):
         list.append(replyButtonData)
     elif "servicios" in text:
         body = "Tenemos varias áreas de consulta para elegir. ¿Cuál de estos servicios te gustaría explorar?"
-        footer = "Equipo Bigdateros"
+        footer = "Gurú ASD ®"
         options = ["Analítica Avanzada", "Migración Cloud", "Inteligencia de Negocio"]
 
         listReplyData = listReply_Message(number, options, body, footer, "sed2",messageId)
