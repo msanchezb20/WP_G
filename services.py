@@ -223,29 +223,32 @@ def administrar_chatbot(text,number, messageId, name):
     if "hola" in text:
         body = "¡Hola! 👋 Bienvenido a GURÚ ASD 🤟, soy tu asistente para aclarar las dudas de la relación laboral e informarte los canales de comunicación de la Compañía"
         footer = "Gurú ASD ®"
-        options = ["🌅 Vacaciones ", "💰 Cesantias"]
+        options = ["🌅 Vacaciones ", "💰 Cesantias", "📝 Certificaciones", "🔥 Convenios de Bienestar "]
 
         replyButtonData = buttonReply_Message(number, options, body, footer, "sed1",messageId)
         replyReaction = replyReaction_Message(number, messageId, "🫡")
         list.append(replyReaction)
         list.append(replyButtonData)
-    elif "servicios" in text:
-        body = "Tenemos varias áreas de consulta para elegir. ¿Cuál de estos servicios te gustaría explorar?"
+        
+    elif "Vacaciones" in text:
+        body = "Preparate para disfrutar un merecido descanso a continuación te cuento que son y como solicitar las vacaciones: "
         footer = "Gurú ASD ®"
-        options = ["Analítica Avanzada", "Migración Cloud", "Inteligencia de Negocio"]
+        options = ["🌄 ¿Qué son las vacaciones?", "🤔 ¿Cómo las puedo pedir?", "🧾 Formato de solicitud de vacaciones.","🤓 Preguntas frecuentes de las vacaciones"]
 
         listReplyData = listReply_Message(number, options, body, footer, "sed2",messageId)
         sticker = sticker_Message(number, get_media_id("perro_traje", "sticker"))
 
         list.append(listReplyData)
         list.append(sticker)
-    elif "inteligencia de negocio" in text:
-        body = "Buenísima elección. ¿Te gustaría que te enviara un documento PDF con una introducción a nuestros métodos de Inteligencia de Negocio?"
+        
+    elif "Cesantias" in text:
+        body = "Las Cesantías son un ahorro que tienen como propósito brindarte tranquilidad cuando más lo necesitas; a continuación te contamos de que se trata este derecho y como puedes acceder a el:"
         footer = "Equipo Bigdateros"
         options = ["✅ Sí, envía el PDF.", "⛔ No, gracias"]
 
         replyButtonData = buttonReply_Message(number, options, body, footer, "sed3",messageId)
         list.append(replyButtonData)
+        
     elif "sí, envía el pdf" in text:
         sticker = sticker_Message(number, get_media_id("pelfet", "sticker"))
         textMessage = text_Message(number,"Genial, por favor espera un momento.")
