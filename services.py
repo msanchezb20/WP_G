@@ -243,11 +243,28 @@ def administrar_chatbot(text,number, messageId, name):
         
     elif "Cesantias" in text:
         body = "Las Cesantías son un ahorro que tienen como propósito brindarte tranquilidad cuando más lo necesitas; a continuación te contamos de que se trata este derecho y como puedes acceder a el:"
-        footer = "Equipo Bigdateros"
-        options = ["✅ Sí, envía el PDF.", "⛔ No, gracias"]
+        footer = "Gurú ASD ®"
+        options = ["🤔 ¿Qué son las cesantías?.", "👈 ¿Cómo las puedo pedir?", "📑 ¿Qué documentos debes presentar?"]
 
         replyButtonData = buttonReply_Message(number, options, body, footer, "sed3",messageId)
         list.append(replyButtonData)
+    
+    elif "Certificaciones" in text:
+        body = "Para la solicitud de certificaciones debes remitir un correo informando tus datos personales (nombre y número de documento) especificando las caracteristicas de la certificación (salarios, funciones, cargos, desempeñados) al siguiente correo: 👉 gestionhumana@grupoasd.co"
+        footer = "Gurú ASD ®"
+        options = ["🔙 Menu principal"]
+
+        replyButtonData = buttonReply_Message(number, options, body, footer, "sed10",messageId)
+        list.append(replyButtonData)
+    
+    
+    
+    
+    
+    
+    
+    
+    
         
     elif "sí, envía el pdf" in text:
         sticker = sticker_Message(number, get_media_id("pelfet", "sticker"))
