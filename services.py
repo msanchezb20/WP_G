@@ -5,11 +5,11 @@ import time
 
 def obtener_Mensaje_whatsapp(message):
     if 'type' not in message :
-        text = 'mensaje no reconocido'
+        text = 'mensaje no reconocido' 
         return text
 
     typeMessage = message['type']
-    if typeMessage == 'text':
+    if typeMessage == 'text': 
         text = message['text']['body']
     elif typeMessage == 'button':
         text = message['button']['text']
