@@ -7,8 +7,7 @@ Creación de chatbot Gurú ASD,
 
 
 ```bash
-git clone https://github.com/JPierr3/bigdateros-whatsappbot-python.git
-```
+git clone + direccion del proyecto
     
 ## Funcionalidades
 
@@ -26,7 +25,7 @@ git clone https://github.com/JPierr3/bigdateros-whatsappbot-python.git
 1. Dirigete al directorio donde descargaste el proyecto
 
 ```bash
-  cd bigdateros-whatsappbot-python
+  cd "nombre de la carpeta creada"
 ```
 2. Crea un ambiente virtual con la version de python 3.10
 
