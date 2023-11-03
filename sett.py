@@ -1,6 +1,8 @@
 token = 'Ingresa Token'
-whatsapp_token = 'ingresa whatsapp token'
-whatsapp_url = 'ingresa whatsapp url'
+
+whatsapp_token = 'EAATGVjhqWy4BOZBfo5XlvXZBGIZC1HTjR8loHo0xuU5NNvZB34ZCRHVZAiFjL1PpnIh87ZCK5ZB92BZBukEKXmGYIEWZClYXmUdYepCqUAEqicZCmIIdM9DZA6SqL7iusLYPuQUKwmJDSf3a7SaqlJMsSuZAmCSpvelRIQVrvZC5lxihxwSsRjmfj6u0wTnQxHFNfcdo6HCeCL4WTdv2KxY5pIm0CIZAEeqxlzu8ZB3CFyXFTkf60IEf'
+
+whatsapp_url = 'ingresa whatsapp url/la de que sale para enviar mensaje o postman'
 
 
 
