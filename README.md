@@ -1,8 +1,7 @@
 
 # Whatsapp Bot con Python
 
-Impulsa tu negocio con un bot usando las apis oficiales de whatsapp.
-pueden ver el video paso a paso en el siguiente enlace: https://youtu.be/puYWiZDJnL0
+Creación de chatbot Gurú ASD, 
 
 ## Descarga el proyecto
 
