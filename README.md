@@ -1,13 +1,14 @@
 
 # Whatsapp Bot con Python
 
-Creación de chatbot Gurú ASD, 
+Creación de chatbot Gurú ASD, asistente para aclarar las dudas de la relación laboral e informar los canales de comunicación de la Compañía
 
 ## Descarga el proyecto
 
 
 ```bash
-git clone + direccion del proyecto
+git clone + https://github.com/msanchezb20/WP_G.git
+```
     
 ## Funcionalidades
 
